@@ -4,7 +4,7 @@ import Dropdown from './components/Dropdown.js'
 import Products from './components/Products.js'
 import Search from './components/Search.js'
 import { useState, useEffect } from 'react' 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom'
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false)
@@ -28,13 +28,15 @@ function App() {
   // }, [])
 
   const onSearch = async (searchQuery) => {
-    console.log(searchQuery.searchQuery)
-    const res = await fetch(`/api/search?name=${searchQuery.searchQuery}`)
-    const data = await res.json()
-    setSearchedProducts(data)
+    try {
+      const res = await fetch(`/api/search?name=${searchQuery.searchQuery}`)
+      const data = await res.json()
+      setSearchedProducts(data)
+    } catch (e) {
+      setSearchedProducts([])
+    }
   }
-  console.log(products)
-  console.log(searchedProducts)
+
   return (
     
     <Router>

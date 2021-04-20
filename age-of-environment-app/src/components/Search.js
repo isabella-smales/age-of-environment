@@ -10,10 +10,8 @@ const Search = ({ onSearch }) => {
           alert('Please search something')
           return
         }
-    
         onSearch({ searchQuery })
         setSearchQuery('')
-        
     }
 
     return (
@@ -23,9 +21,7 @@ const Search = ({ onSearch }) => {
                 <input type="text" placeholder="Search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
             </div>
             <button type="submit" value='Search Products'>Submit</button>
-        </form>
-            
-        
+        </form> 
     )
 }
 
