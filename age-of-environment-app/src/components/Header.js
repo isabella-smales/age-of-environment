@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import Button from './Button'
+import { BsSearch } from 'react-icons/bs'
 
 const Header = ({ onDropdown, showDropdown }) => {
     return (
@@ -14,7 +15,9 @@ const Header = ({ onDropdown, showDropdown }) => {
                 <Button text='All Products' className='headerButtons'/>
             </Link>
             <Button text={ showDropdown ? 'Less' : 'More'} onClick={onDropdown} className='headerButtons'/>
-            <Button text='Search' className='headerButtons'/>
+            <Link to='/search'>
+                <Button text='Search' className='headerButtons' icon = {<BsSearch />} />
+            </Link>
         </header>
     )
 }
