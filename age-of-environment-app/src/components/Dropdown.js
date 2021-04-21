@@ -5,7 +5,7 @@ const Dropdown = () => {
     return (
         <div>
             <Link to='/new_product'>
-                <Button text='Add New Product'/>
+                <Button text='Add New Product' className="newProductButton"/>
             </Link>
         </div>
     )
