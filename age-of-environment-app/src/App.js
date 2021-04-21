@@ -81,16 +81,7 @@ function App() {
         showDropdown = {showDropdown} onClickSearch={onClickSearch}/>
         {showDropdown && <Dropdown />}
         <Route path='/' exact>
-          <Homepage data={homepageProducts} homepage={true}/> {/* image={} 
-          Silicone Reusable Food Bag
-          https://img.huffingtonpost.com/asset/5dcc389d2500001105d2cfe2.jpeg?ops=scalefit_960_noupscale&format=webp
-
-          Stainless Steel Mug
-          https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1583786380-1581714108-eco-friendly-products-zojirushi-stainless-steel-mug-1581714090.jpg?crop=1xw:1xh;center,top&resize=768:*
-
-          Reusable Stainless Steel Straws
-          https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1583786859-51U6SwmOML.jpg?crop=1xw:1.00xh;center,top&resize=768:*
-          */}
+          <Homepage data={homepageProducts} homepage={true}/>
         </Route>
         <Route path='/allproducts'>
           <Products products={products}  />
@@ -100,7 +91,7 @@ function App() {
           <Search onSearch={onSearch} />
           <Products products={searchedProducts} />
         </Route>
-        <Footer />
+        {/* <Footer /> */}
         
       </div>
     </Router>
