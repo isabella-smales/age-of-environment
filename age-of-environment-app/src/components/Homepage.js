@@ -1,6 +1,5 @@
 import Products from './Products.js'
 
-
 const Homepage = ({ data, homepage }) => {
     return (
         <div>

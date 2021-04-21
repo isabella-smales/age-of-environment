@@ -1,5 +1,5 @@
 import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+// import Footer from './components/Footer.js'
 import Dropdown from './components/Dropdown.js'
 import Products from './components/Products.js'
 import Search from './components/Search.js'
@@ -51,7 +51,7 @@ function App() {
             // fetch("/allproducts").then(res => res.json().then(data => {
             //   setProducts(data);
             // }))
-      let data2 = []
+      const data2 = []
       for (let id of [32,15,33]) {
         data2.push(products.filter((product) => product.id === id)[0])
       }
