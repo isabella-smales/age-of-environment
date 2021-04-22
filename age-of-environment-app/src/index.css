@@ -66,7 +66,6 @@ img {
 .homepageItemCard {
   width: 25%;
   transition: 0.5s ease;
-  cursor: pointer;
   margin:30px;
 }
 
@@ -80,8 +79,9 @@ img {
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
 .homepageItemCard:hover{
-  transform: scale(1.15);
+  transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0);
 }
 
@@ -168,8 +168,6 @@ img {
   color: #ade28a;
 }
 
-
-
 .btn{
   display: inline-block;
   background: #1e425e;
@@ -243,7 +241,7 @@ img {
   margin-left: 75% !important;
 }
 
-.Description {
+.description {
   /* font-family: Arial; */
   font-style: normal;
   /* font-weight: lighter; */
@@ -310,11 +308,11 @@ img {
   font-family: 'Montserrat', sans-serif;
   background-color: #1e425e;
   color: #F4B95F;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   position: relative;
   left: 40%;
   width: 20%;
-  height: 50px;
+  height: 40px;
   border-radius: 10px;
   text-align: 14px;
 }

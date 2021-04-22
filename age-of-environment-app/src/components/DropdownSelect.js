@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const DropdownSelect = ({onSelectDropdown}) => {
+const DropdownSelect = ({ onSelectDropdown }) => {
     const [dropdownSelection, setDropdownSelection] = useState('-1')
     // onSelectDropdown({ dropdownSelection })
     const changeCategory = (newCategory) => {
@@ -27,16 +27,13 @@ const DropdownSelect = ({onSelectDropdown}) => {
     return (
         <div>
             <select className="dropdownSelect" onChange={(e) => { setDropdownSelection(e.target.value); changeCategory(e.target.value); }} value={dropdownSelection}>
-                <option value="-1">Select a category</option>
+                <option value="-1">Select a Category</option>
                 <option value='1'>Groceries</option>
                 <option value='2'>Toiletries</option>
                 <option value='3'>Clothing</option>
                 <option value='4'>Accessories</option>
                 <option value='5'>Home Essentials</option>
                 <option value='11'>Health</option>
-                {/* {% for category in categories %}
-                    <option value="{ {category.id} }">{{ category.name }}</option>
-                {% endfor %} */}
             </select>
         </div>
     )
