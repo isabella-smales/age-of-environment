@@ -24,10 +24,13 @@ img {
 
 .App {
   background-image: url(./images/forest-birds-eye-view-copy.jpg);
-
-  height: 100%; 
-  background-position: center;
-  background-repeat: none;
+  
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
