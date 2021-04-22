@@ -1,9 +1,12 @@
 import Button from './Button'
 import {Link} from 'react-router-dom'
 import { BsSearch } from 'react-icons/bs'
+import { SlideDown } from 'react-slidedown'
+import 'react-slidedown/lib/slidedown.css'
 
 const Dropdown = ({ onClickSearchByCat, onClickSearch }) => {
     return (
+        <SlideDown>
         <div className='moreTabsDropdown'>
             <Link to='/search'>
                 <Button text='Search by Product' className='searchProductBtn' icon = {<BsSearch />} onClick = {onClickSearch} />
@@ -12,6 +15,7 @@ const Dropdown = ({ onClickSearchByCat, onClickSearch }) => {
                 <Button text='Search by Category' className="searchByCategoryBtn" icon = {<BsSearch />} onClick={onClickSearchByCat} />
             </Link>
         </div>
+        </SlideDown>
     )
 }
 
