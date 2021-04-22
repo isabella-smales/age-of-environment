@@ -168,10 +168,7 @@ img {
   color: #ade28a;
 }
 
-.searchByCategoryBtn {
-  padding-left : 90% !important;
-  background-color: #ffff;
-}
+
 
 .btn{
   display: inline-block;
@@ -226,11 +223,24 @@ img {
   margin-right: auto;
 }
 
-.moreTabsDropdown {
-  float: middle;
-  margin-right: auto;
-  margin-left: auto;
+.searchProductBtn {
   margin-bottom: 30px;
+  position: relative;
+  width: 20%;
+  margin-left: 75% !important;
+}
+
+.moreTabsDropdown {
+  position: relative;
+  margin-left: 64.75%;
+  margin-bottom: 30px;
+}
+
+.searchByCategoryBtn {
+  margin-bottom: 30px;
+  position: relative;
+  width: 20%;
+  margin-left: 75% !important;
 }
 
 .Description {
@@ -277,7 +287,6 @@ img {
   cursor: text;
 }
 
-
 .searchButton {
   align-content: center;
   font-family: 'Montserrat', sans-serif;
@@ -292,6 +301,10 @@ img {
   height: 30px
 }
 
+.searchButton:hover {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  cursor: pointer;
+}
 
 .dropdownSelect {
   font-family: 'Montserrat', sans-serif;

@@ -38,8 +38,6 @@ const DropdownSelect = ({onSelectDropdown}) => {
                     <option value="{ {category.id} }">{{ category.name }}</option>
                 {% endfor %} */}
             </select>
-            
-            
         </div>
     )
 }

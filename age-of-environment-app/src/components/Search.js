@@ -21,7 +21,7 @@ const Search = ({ onSearch }) => {
             <div className='form-control'>
                 <input className='search-bar' type="text" placeholder='Search for a product...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
             </div>
-            <button className='searchButton' type="submit" value='Search Products'>Submit {<BsSearch/>}</button>
+            <button className='searchButton' type="submit" value='Search Products'>Search {<BsSearch/>}</button>
         </form>
     )
 }

@@ -6,7 +6,7 @@ const Dropdown = ({ onClickSearchByCat, onClickSearch }) => {
     return (
         <div className='moreTabsDropdown'>
             <Link to='/search'>
-                <Button text='Search Products' className='headerButtons' icon = {<BsSearch />} onClick = {onClickSearch} />
+                <Button text='Search by Product' className='searchProductBtn' icon = {<BsSearch />} onClick = {onClickSearch} />
             </Link>
             <Link to='/search_by_category'>
                 <Button text='Search by Category' className="searchByCategoryBtn" icon = {<BsSearch />} onClick={onClickSearchByCat} />
