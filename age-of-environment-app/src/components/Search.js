@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BsSearch } from 'react-icons/bs'
 
 const Search = ({ onSearch }) => {
     const [searchQuery, setSearchQuery] = useState('')
@@ -18,9 +19,9 @@ const Search = ({ onSearch }) => {
     
         <form className='search-form' onSubmit={onSubmit}>
             <div className='form-control'>
-                <input type="text" placeholder="Search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+                <input className='search-bar' type="text" placeholder='Search for a product...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
             </div>
-            <button type="submit" value='Search Products'>Submit</button>
+            <button className='searchButton' type="submit" value='Search Products'>Submit {<BsSearch/>}</button>
         </form>
     )
 }

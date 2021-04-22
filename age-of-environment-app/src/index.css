@@ -3,6 +3,7 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
+    background-size:cover;
     font-family: 'Lora', serif;
     font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,11 +23,11 @@ img {
 }
 
 .App {
-  background-image: url(./images/forest-birds-eye-view.jpg);
+  background-image: url(./images/forest-birds-eye-view-copy.jpg);
 
   height: 100%; 
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: none;
   background-size: cover;
 }
 
@@ -210,23 +211,6 @@ img {
   width: 60px;
 }
 
-.searchButton {
-  position: relative;
-  width: 157px;
-  height: 61px;
-  top: 36px;
-
-  /* font-family: Arial; */
-  font-style: normal;
-  /* font-weight: bold; */
-  font-size: 25px;
-  line-height: 116.19%;
-
-  text-align: center;
-
-  color: #407056;
-}
-
 .banner {
   /* font-family: Arial; */
   font-style: normal;
@@ -240,7 +224,13 @@ img {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.moreTabsDropdown {
+  float: middle;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .Description {
@@ -266,8 +256,52 @@ img {
 
 
 .form-control {
-    margin: 100px auto;
-    width: 300px;
+    margin: 0px auto;
+    width: 500px;
     height: 50px;
 }
 
+.search-bar{
+  height: 70%;
+  width: 100%;
+  
+  background: #EFFBFF;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center; 
+}
+
+.search-bar:hover {
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+  cursor: text;
+}
+
+
+.searchButton {
+  align-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color:#EFFBFF ;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  width: 100px;
+  height: 30px
+}
+
+
+.dropdownSelect {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1e425e;
+  color: #F4B95F;
+  margin-bottom: 10%;
+  position: relative;
+  left: 40%;
+  width: 20%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: 14px;
+}

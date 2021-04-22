@@ -1,11 +1,15 @@
 import Button from './Button'
 import {Link} from 'react-router-dom'
+import { BsSearch } from 'react-icons/bs'
 
-const Dropdown = ({ onClickSearchByCat }) => {
+const Dropdown = ({ onClickSearchByCat, onClickSearch }) => {
     return (
-        <div>
+        <div className='moreTabsDropdown'>
+            <Link to='/search'>
+                <Button text='Search Products' className='headerButtons' icon = {<BsSearch />} onClick = {onClickSearch} />
+            </Link>
             <Link to='/search_by_category'>
-                <Button text='Search by Category' className="searchByCategoryBtn" onClick={onClickSearchByCat} />
+                <Button text='Search by Category' className="searchByCategoryBtn" icon = {<BsSearch />} onClick={onClickSearchByCat} />
             </Link>
         </div>
     )

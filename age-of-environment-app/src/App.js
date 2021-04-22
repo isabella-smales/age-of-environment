@@ -93,15 +93,14 @@ function App() {
     <Router>
       <div className="App">
         <Header onDropdown={() => setShowDropdown(!showDropdown)}
-        showDropdown = {showDropdown} onClickSearch={onClickSearch}/>
-        {showDropdown && <Dropdown onClickSearchByCat={onClickSearchByCat} />}
+        showDropdown = {showDropdown} />
+        {showDropdown && <Dropdown onClickSearchByCat={onClickSearchByCat} onClickSearch={onClickSearch} />}
         <Route path='/' exact>
           <Homepage data={homepageProducts} homepage={true}/>
         </Route>
         <Route path='/allproducts'>
           <Products products={products}  />
         </Route>
-        <Route path='/login'/>
         <Route path='/search'>
           <Search onSearch={onSearch} />
           <Products products={searchedProducts} />
