@@ -48,7 +48,7 @@ img {
   width: 27%;
   height: 330px;
   background-color: #1e425e;
-  color:#ade28a;
+  color:#F4B95F;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +72,7 @@ img {
 .homepageCard {
   height: 330px;
   background-color: #1e425e;
-  color:#ade28a;
+  color:#F4B95F;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -88,7 +88,7 @@ img {
   text-align: left;
   /* color: #ade28a; */
   font-size: medium;
-  font-weight: lighter;
+  /* font-weight: lighter; */
   /* background-color: #1e425e;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -100,7 +100,7 @@ img {
 }
 
 .h1 {
-  color: #ade28a;
+  color: #F4B95F;
 }
 
 .header{
@@ -139,8 +139,8 @@ img {
   /* display: flex; */
   /* align-items: left; */
   /* text-align: center; */
-
-  color: #ade28a
+  /* color: #F4B95F; */
+  color: #EB7035;
 }
 
 .links {
@@ -167,10 +167,15 @@ img {
   color: #ade28a;
 }
 
+.searchByCategoryBtn {
+  padding-left : 90% !important;
+  background-color: #ffff;
+}
+
 .btn{
   display: inline-block;
   background: #1e425e;
-  color: #ade28a;
+  color: #F4B95F;
   border: none;
   padding: 10px 20px;
   margin: 5px;
@@ -227,7 +232,7 @@ img {
   font-style: normal;
   /* font-weight: bold; */
   font-size: 30px;
-  color: #ade28a;
+  color: #F4B95F;
   background: #1e425e;
   border-radius: 50px;
   text-align: center;
@@ -241,10 +246,10 @@ img {
 .Description {
   /* font-family: Arial; */
   font-style: normal;
-  font-weight: lighter;
+  /* font-weight: lighter; */
   /* font-weight: bold; */
   font-size: 18px;
-  color: #ade28a;
+  color: #F4B95F;
   margin-left: 5%;
   margin-right: 5%;
   background-color: #1e425e;
@@ -252,7 +257,7 @@ img {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .homepage {
@@ -265,3 +270,4 @@ img {
     width: 300px;
     height: 50px;
 }
+

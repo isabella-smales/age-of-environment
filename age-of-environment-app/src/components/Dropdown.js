@@ -1,11 +1,11 @@
 import Button from './Button'
 import {Link} from 'react-router-dom'
 
-const Dropdown = () => {
+const Dropdown = ({ onClickSearchByCat }) => {
     return (
         <div>
-            <Link to='/new_product'>
-                <Button text='Add New Product' className="newProductButton"/>
+            <Link to='/search_by_category'>
+                <Button text='Search by Category' className="searchByCategoryBtn" onClick={onClickSearchByCat} />
             </Link>
         </div>
     )

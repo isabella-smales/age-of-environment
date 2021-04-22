@@ -6,12 +6,14 @@ import Search from './components/Search.js'
 import Homepage from './components/Homepage.js'
 import { useState, useEffect } from 'react' 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import DropdownSelect from './components/DropdownSelect.js'
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false)
   const [products, setProducts] = useState([]) 
   const [searchedProducts, setSearchedProducts] = useState([])
   const [homepageProducts, setHomepageProducts] = useState([])
+  const [dropdownProducts, setDropdownProducts] = useState([])
 
   useEffect(() => {
     fetch("/allproducts").then(res => res.json().then(data => {
@@ -43,6 +45,20 @@ function App() {
     setSearchedProducts([])
   }
 
+  const onClickSearchByCat = async () => {
+    setDropdownProducts([])
+  }
+
+  const onSelectDropdown = async (dropdownSelection) => {
+    try {
+      const res = await fetch(`/api/product?category_id=${dropdownSelection}`)
+      const data = await res.json()
+      setDropdownProducts(data)
+    } catch (e) {
+      setDropdownProducts([])
+    }
+  }
+
   useEffect(() => {
     const homepageItemSelector = async () => {
       const res = await fetch("/allproducts")
@@ -60,11 +76,10 @@ function App() {
         data2[i]['image'] = image_urls[i]
       }
       setHomepageProducts(data2)
-      console.log(data2)
     }
     homepageItemSelector()
   }, [])
-  console.log(homepageProducts)
+
   
   //const home = await homepageItemSelector([15,19,23])
 
@@ -79,7 +94,7 @@ function App() {
       <div className="App">
         <Header onDropdown={() => setShowDropdown(!showDropdown)}
         showDropdown = {showDropdown} onClickSearch={onClickSearch}/>
-        {showDropdown && <Dropdown />}
+        {showDropdown && <Dropdown onClickSearchByCat={onClickSearchByCat} />}
         <Route path='/' exact>
           <Homepage data={homepageProducts} homepage={true}/>
         </Route>
@@ -90,6 +105,10 @@ function App() {
         <Route path='/search'>
           <Search onSearch={onSearch} />
           <Products products={searchedProducts} />
+        </Route>
+        <Route path='/search_by_category'>
+          <DropdownSelect onSelectDropdown={onSelectDropdown} />
+          <Products products={dropdownProducts} />
         </Route>
         {/* <Footer /> */}
         
