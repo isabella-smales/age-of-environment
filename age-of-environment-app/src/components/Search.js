@@ -13,18 +13,19 @@ const Search = ({ onSearch }) => {
           alert('Please search something')
           return
         }
+
         onSearch({ searchQuery })
         setSearchQuery('')
     }
 
     return (
         <SlideDown>
-        <form className='search-form' onSubmit={onSubmit}>
-            <div className='form-control'>
-                <input className='search-bar' type="text" placeholder='Search for a product...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-            </div>
-            <button className='searchButton' type="submit" value='Search Products'>Search {<BsSearch/>}</button>
-        </form>
+            <form className='search-form' onSubmit={onSubmit}>
+                <div className='form-control'>
+                    <input className='search-bar' type="text" placeholder='Search for a product...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+                </div>
+                <button className='searchButton' type="submit" value='Search Products'>Search {<BsSearch/>}</button>
+            </form>
         </SlideDown>
     )
 }

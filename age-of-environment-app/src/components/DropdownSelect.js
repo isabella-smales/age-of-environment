@@ -4,26 +4,9 @@ import 'react-slidedown/lib/slidedown.css'
 
 const DropdownSelect = ({ onSelectDropdown }) => {
     const [dropdownSelection, setDropdownSelection] = useState('-1')
-    // onSelectDropdown({ dropdownSelection })
-    const changeCategory = (newCategory) => {
-        //e.preventDefault()
     
-        // if (!searchQuery) {
-        // alert('Please search something')
-        // return
-        // }
-        
-        console.log(newCategory)
-        // setDropdownSelection(newCategory)
-        console.log(dropdownSelection)
-        onSelectDropdown( newCategory )
-        
-        // setDropdownSelection('-1')
-
-        // THIS NOW WORKS BUT THE dropdownSelection IS ALWAYS 1 CHANGE BEHIND
-        // FIRST IT MAKES A REQUEST TO category_id=-1, THEN TO WHICHEVER YOU CLICKED
-        // THE PREVIOUS TIME
-        // weird
+    const changeCategory = (newCategory) => {        
+        onSelectDropdown(newCategory)
     }
     
     return (
