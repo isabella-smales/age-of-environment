@@ -1,5 +1,4 @@
 import Header from './components/Header.js'
-// import Footer from './components/Footer.js'
 import Dropdown from './components/Dropdown.js'
 import Products from './components/Products.js'
 import Search from './components/Search.js'
@@ -87,8 +86,6 @@ function App() {
           <DropdownSelect onSelectDropdown={onSelectDropdown} />
           <Products products={dropdownProducts} />
         </Route>
-        {/* <Footer /> */}
-        
       </div>
     </Router>
   );

@@ -9,10 +9,6 @@ const Button = ({ text, onClick, icon }) => {
     )
 }
 
-Button.defaultProps = {
-    //color: 'blue'
-}
-
 Button.propTypes = {
     text: PropTypes.string.isRequired,
 }
