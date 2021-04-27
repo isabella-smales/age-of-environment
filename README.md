@@ -6,7 +6,7 @@ As you all know, we are facing a significant climate crisis. With the planet get
 
 ## Frontend project for the Bright Network Technology Academy (BNTA)
 
-This website has been developed to utilise the backend API (https://github.com/zmervey18/EcoSwap) that our group inhereted from the "EcoSwap" group, created for the backend BNTA project. This API was developed using Flask and an SQLite database. 
+This website has been developed to utilise the backend API (https://github.com/zmervey18/EcoSwap) that our group inherited from the "EcoSwap" group, created for the backend BNTA project. This API was developed using Flask and an SQLite database. 
 
 A few small changes were made to the API, with the main purpose of making the endpoints return JSON data which we could use on our frontend, instead of the backend rendering HTML templates. The API we used to serve our frontend can be found at 
 https://github.com/JosephSimmons/EcoSwap-clone. 
