@@ -2,7 +2,7 @@
 
 ## Welcome to the Age of Environment
 
-As you all know, we are facing a significant climate crisis. With the planet getting into a worse and worse state, it is up to us to shop responsibly and buy with our conscience in mind. Our mission statement was to help people buy responsibly and protect the planet. Our website will help you find plenty of products that you can substitute for a more eco-friendly alternative. Use our search function to find something specific or if you don’t know what you may want then our 'all products' tag will help you to find and explore.
+As you all know, we are facing a significant climate crisis. With the planet getting into a worse and worse state, it is up to us to shop responsibly and buy with our conscience in mind. Our mission statement is to help people buy responsibly and protect the planet. Our website will help you find plenty of products that you can substitute for a more eco-friendly alternative. Use our search function to find something specific or if you don’t know what you may want then our 'all products' tag will help you to find and explore.
 
 ## Frontend project for the Bright Network Technology Academy (BNTA)
 
